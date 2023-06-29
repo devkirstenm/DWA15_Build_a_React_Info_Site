@@ -1,0 +1,76 @@
+* { /* selects all elements */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background: #282D35;
+}
+
+/* nav (top bar) content */ 
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #21222A;
+  height: 90px;
+  padding: 30px 25px;
+}
+
+.nav--logo_text, .nav--title {
+  margin: 0;
+}
+
+.nav--logo_text {
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav--title {
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+.nav--icon {
+  height: 30px;
+  margin-right: 7px;
+}
+
+
+/* main content */
+.main--icon {
+  position: absolute;
+  top: 38%; 
+  right: 0; 
+}
+
+main {
+  padding: 57px 27px; /* top/bottom padding: 57, left/right padding: 27 */
+  color: white;
+}
+
+.main--title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main--facts {
+  margin-top: 46px;
+  max-width: 400px; /* so that text wraps to the next line & doesn't take up the full width */
+}
+
+.main--facts > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+/* color main facts bullets */
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
+}
